@@ -1,1 +1,39 @@
-/* Add your CSS Below */
+/* Add your CSS Below 
+
+Thank you to internetingishard.com lol.
+https://www.internetingishard.com/html-and-css/advanced-positioning/
+*/
+
+/* Box 1b is positioned relatively to its own box. */
+
+.one div:nth-child(2) {
+  position: relative;
+  bottom: 20px;
+  left: 20px;
+}
+
+/* Container 2 is a relative point of reference.
+Box 2b is absolutely positioned based on Container 2. */
+
+.two {
+  position: relative;
+}
+
+.two div:nth-child(2) {
+  position: absolute;
+  left: 100px;
+  bottom: 100px;
+}
+
+/* Box 3a should use fixed?
+Couldn't get it to stop going past the bottom of the container  though. */
+
+.three {
+  display: flex;
+  flex-direction: column;
+  /*   position: relative; */
+}
+.three div:nth-child(1) {
+  position: fixed;
+  align-self: flex-end;
+}
