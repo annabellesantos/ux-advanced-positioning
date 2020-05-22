@@ -1,0 +1,98 @@
+/* Misc notes:
+
+Fonts: 
+font-family: 'Varela Round', sans-serif;
+
+Mobile Layout (230px-550px)
+- full width header
+- 2 column gallery
+
+Desktop Layout (550px and up)
+- header on left
+- varying number of columns based on screen width
+
+Mobile first
+
+*/
+@media (max-width: 550px) {
+    body {
+        background-color: skyblue;
+    }
+}
+
+* {
+    margin: 0;
+    padding 0;
+    box-sizing: border-box;
+}
+
+/* header section */
+
+.description {
+
+    /* White card */
+
+    border-collapse: collapse;
+    background-color: white;
+    color: darkgreen;
+
+    /* White text on blue - unused */
+
+/*     border: 1px solid white;
+    color: white;
+    text-shadow: 4px 4px 10px rgb(1,1,1,0.1); */
+
+    padding: 10px;
+    margin: 10px 10px 20px 10px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 20px rgb(1,1,1,0.1);
+    font-family: "Varela Round", sans-serif;
+}
+
+h1 {
+  font-family: "Varela Round", sans-serif;
+}
+
+p {
+  font-family: "Varela Round", sans-serif;
+}
+
+/* gallery section */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+img {
+    width: 100%;
+}
+
+/* specific cards */
+
+.flower {
+    background-color: white;
+    padding: 10px;
+    width: 30%;
+    border-radius: 4px;
+    margin: 10px;
+    box-shadow: 5px 5px 20px rgb(1,1,1,0.1);
+}
+
+
+/* Desktop Layout (550px and up)
+- header on left
+- varying number of columns based on screen width */
+
+@media (min-width: 550px) {
+    body {
+        background-color: lightgreen;
+        display: flex;
+    }
+
+    .description {
+        height: 90%;
+    }
+
+}
